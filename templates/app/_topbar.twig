@@ -1,0 +1,21 @@
+
+{% if auth.check() %}
+
+    <!-- Topbar -->
+    <nav class="navbar navbar-expand navbar-dark bg-navbar topbar fixed-top">
+
+      <!-- Sidebar Toggle (Topbar) -->
+      <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
+        <i class="fa fa-bars"></i>
+      </button>
+
+      <!-- Topbar Navbar -->
+      <ul class="navbar-nav">
+
+        {% include 'auth/_nav.twig' %}
+
+      </ul>
+
+    </nav>
+    <!-- End of Topbar -->
+{% endif %}

@@ -1,0 +1,119 @@
+body {
+  padding-top: 90px;
+}
+@media (min-width:768px) {
+  body {
+    padding-top: 0;
+  }
+}
+@media (min-width:768px) {
+  body {
+    margin-right: 232px;
+  }
+}
+
+nav.bg-navbar {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.fixed-right {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    padding: 5px;
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      border: 1px solid $gray-900;
+      .card-header {
+        border-bottom: 1px solid $gray-900;
+        background: transparent;
+        h5 {
+          font-size: 1rem;
+          padding: 5px 0 0 5px;
+        }
+      }
+      .card-body {
+        padding: 5px;
+        height: 75%;
+        .card-text {
+          max-height: 100px;
+          overflow-y: scroll;
+          font-size: .75rem;
+          display: inline-grid;
+          a {
+            display: inline-grid;
+          }
+        }
+        .carousel img {
+           width: 100%;
+        }
+        .container {
+          img.rounded-circle {
+            max-width: 25px
+          }
+          a {
+            margin-left: 30px;
+          }
+          .text-truncate {
+            margin-top: -5px;
+          }
+          p {
+            font-size: .65rem
+          }
+        }
+      }
+    }
+}
+
+.fixed-right  ul.navbar-nav.navbar-notifications {
+  flex-direction: row!important;
+}
+
+@media (min-width:768px) {
+  .navbar.fixed-right {
+    bottom: 0;
+    width: 232px;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+  }
+
+  .navbar.fixed-right .navbar-collapse {
+    flex-grow: 0;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar.fixed-right .navbar-collapse .navbar-nav {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navbar.fixed-right .navbar-collapse .navbar-nav .nav-item {
+    width: 100%;
+  }
+
+  .navbar.fixed-right .navbar-collapse .navbar-nav .nav-item .dropdown-menu {
+    top: 0;
+  }
+}
+
+@media (min-width:768px) {
+  .navbar.fixed-right {
+    left: auto;
+  }
+
+  .navbar.fixed-right .navbar-nav .nav-item .dropdown-toggle:after {
+    border-top: 0.3em solid transparent;
+    border-left: none;
+    border-bottom: 0.3em solid transparent;
+    border-right: 0.3em solid;
+    vertical-align: baseline;
+  }
+
+  .navbar.fixed-right .navbar-nav .nav-item .dropdown-menu {
+    left: auto;
+    right: 100%;
+  }
+}
