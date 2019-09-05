@@ -27,7 +27,7 @@
         }
     },
     "require": {
-        "php": "^7.0",
+        "php": "^7.1",
         "awurth/slim-helpers": "^1.0",
         "awurth/slim-validation": "^3.0",
         "cartalyst/sentinel": "^2.0",
@@ -54,5 +54,13 @@
     "scripts": {
         "start": "php -S 0.0.0.0:8080 -t public",
         "test": "phpunit"
-    }
+    },
+    "post-update-cmd": [
+        "npm update",
+        "gulp"
+    ],
+    "post-install-cmd": [
+      "npm install",
+      "gulp"
+    ]
 }
