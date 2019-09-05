@@ -2,9 +2,9 @@
 
 namespace App\Controller;
 
-use Awurth\Slim\Helper\Controller\Controller;
-use Slim\Http\Request;
-use Slim\Http\Response;
+use Awurth\Slim\Helper\Controller\Controller as Controller;
+use Slim\Http\Request as Request;
+use Slim\Http\Response as Response;
 use App\Model\Slack;
 
 class AppController extends Controller

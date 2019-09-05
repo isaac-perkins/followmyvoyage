@@ -1,21 +1,34 @@
 "use strict";
+global: Vue;
+global: Vue2Leaflet;
+global: L;
+var {
+  LMap,
+  LTileLayer,
+  LMarker
+} = Vue2Leaflet;
 
-var { LMap, LTileLayer, LMarker } = Vue2Leaflet;
+vue();
 
-new Vue({
-  el: '#app',
-  components: { LMap, LTileLayer, LMarker },
-  data() {
-    return {
-      zoom:13,
-      center: L.latLng(47.413220, -1.219482),
-      url:'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
-      attribution:'&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-      marker: L.latLng(47.413220, -1.219482),
+function vue {
+  return new Vue({
+    el: '#app',
+    components: {
+      LMap,
+      LTileLayer,
+      LMarker
+    },
+    data() {
+      return {
+        zoom: 13,
+        center: L.latLng(47.413220, -1.219482),
+        url: 'http://{s}.tile.osm.org/{z}/{x}/{y}.png',
+        attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+        marker: L.latLng(47.413220, -1.219482),
+      }
     }
-  }
-});
-
+  });
+}
 /*
 
     Vue.component('v-map', window.Vue2Leaflet.Map);
@@ -57,4 +70,3 @@ new Vue({
     });
 
 */
-console.log('end');

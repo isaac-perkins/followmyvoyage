@@ -5,8 +5,8 @@ use Slim\Handlers\NotAllowed;
 use Slim\Handlers\NotFound;
 use Slim\Handlers\PhpError;
 use Slim\Handlers\Strategies\RequestResponseArgs;
-use Slim\Http\Request;
-use Slim\Http\Response;
+use Slim\Http\Request as Request;
+use Slim\Http\Response as Response;
 
 /**
  * Controller functions signature must be like:

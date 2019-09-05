@@ -5,8 +5,8 @@ namespace App\Controller;
 use Awurth\Slim\Helper\Controller\Controller;
 use Cartalyst\Sentinel\Checkpoints\ThrottlingException;
 use Respect\Validation\Validator as V;
-use Slim\Http\Request;
-use Slim\Http\Response;
+use Slim\Http\Request as Request;
+use Slim\Http\Response as Response;
 
 /**
  * @property \Awurth\SlimValidation\Validator validator
