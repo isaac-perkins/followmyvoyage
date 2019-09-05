@@ -7,13 +7,11 @@
     "authors": [
         {
             "name": "Isaac Perkins",
-            "email": "zak@webanet.com.au",
-            "homepage": "https://github.com/webanet-australia/"
+            "email": "zak@webanet.com.au"
         }
         {
             "name": "Alexis Wurth",
-            "email": "awurth.dev@gmail.com",
-            "homepage": "https://github.com/awurth"
+            "email": "awurth.dev@gmail.com"
         }
     ],
     "autoload": {
