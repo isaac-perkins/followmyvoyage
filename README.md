@@ -1,4 +1,3 @@
 # FollowMy.Voyage
 
-Coming Soon
-
+[Coming Soon](http://followmy.voyage)
