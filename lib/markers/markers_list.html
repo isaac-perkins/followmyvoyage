@@ -1,0 +1,35 @@
+<h4>Markers</h4>
+<div class="row">
+  <div class="col-md-6">
+    <form class="form-inline">
+      <div class="form-group">
+        <label for="text-dest-name">Name</label>
+        <input #inputName id="text-dest-name" class="form-control" type="text" placeholder="name">
+      </div>
+      <div class="form-group">
+        <label for="text-dest-description">Description</label>
+        <input #inputDesc id="text-dest-description" class="form-control" type="text" placeholder="Description">
+      </div>
+      <div class="form-group">
+        <label for="text-dest-lat">Lat</label>
+        <input #inputLat id="text-dest-lat" class="form-control" type="text" placeholder="Latitude">
+      </div>
+      <div class="form-group">
+        <label for="text-dest-lng">Lng</label>
+        <input #inputLng id="text-dest-lng" class="form-control" type="text" placeholder="Longitude">
+      </div>
+      <button (click)="add" class="btn btn-primary mt-2" type="button">Add</button>
+    </form>
+  </div>
+  <div class="col-md-6">
+    <div style="height: 420px; width: 220px; overflow-x: scroll">
+      <ul class="list-group">
+        <li class="list-group-item" *ngFor="let marker of markers.reversed">
+          <h4>{{marker.name}}</h4>
+          <p>{{marker.description}}</p>
+          <p style="font-size:10px;">{{marker.lat}} : {{marker.lng}}</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
